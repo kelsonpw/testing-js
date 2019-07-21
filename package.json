@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:kelsonpw/testing-js.git",
   "author": "Kelson Warner <kelson@null.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "node --require ./testUtils",
+    "fundamentals": "npm run test -- ./fundamentals"
+  }
 }

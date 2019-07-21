@@ -23,23 +23,3 @@ test('subtract subtracts numbers', async () => {
   expect(await subtractAsync(0, 0)).toBe(0);
   expect(await subtractAsync(0, -10)).toBe(10);
 });
-
-async function test(title, cb) {
-  try {
-    await cb();
-    console.log(`✅ ${title}`);
-  } catch (error) {
-    console.error(`🆘 ${title}`);
-    console.error(error);
-  }
-}
-
-function expect(actual) {
-  return {
-    toBe(expected) {
-      if (actual !== expected) {
-        throw new Error(`${actual} is not equal to ${expected}`);
-      }
-    },
-  };
-}
