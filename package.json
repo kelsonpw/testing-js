@@ -6,7 +6,6 @@
   "author": "Kelson Warner <kelson@null.net>",
   "license": "MIT",
   "scripts": {
-    "test": "node --require ./testUtils",
-    "fundamentals": "npm run test -- ./fundamentals"
+    "test": ""
   }
 }
